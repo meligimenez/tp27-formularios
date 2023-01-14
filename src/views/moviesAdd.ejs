@@ -17,8 +17,8 @@
     <br>
     <section id="formulario">
         <article class="mostrarFormulario">
-            <ul class="errores"></ul>
-            <form class="form" action="/movies/create" method="POST" id="form">
+            <ul class="errores" id="errores"></ul>
+            <form class="form" action="/movies/create" method="POST" id="addMovies">
                 <label for="title">Titulo </label>
                 <div>
                     <input type="text" name="title" id="title">
@@ -58,7 +58,7 @@
                     <p class="alert-warning" id="genre_idMsg"></p>
                 </div>
                 <br>
-                <div> <button class="botonAgregar" type="submit">Agregar</button>
+                <div> <button class="botonAgregar" id="btn-submit" type="submit">Agregar</button>
 
                     <a class="botonVolver" href="/movies">Listado de Películas</a>
                 </div>
